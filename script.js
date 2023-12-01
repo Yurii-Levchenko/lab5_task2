@@ -23,13 +23,13 @@ function displayWeatherData(data) {
     const windSpeed = data.wind.speed;
 
     const temperatureDiv = document.createElement('div');
-    temperatureDiv.textContent = 'Температура: ${temperature} C';
+    temperatureDiv.textContent = `Температура: ${temperature} C`;
 
     const humidityDiv = document.createElement('div');
-    humidityDiv.textContent = 'Вологість: ${humidity}%';
+    humidityDiv.textContent = `Вологість: ${humidity}%`;
 
     const windSpeedDiv = document.createElement('div');
-    windSpeedDiv.textContent = 'Швидкість вітру: ${windSpeed} м/с';
+    windSpeedDiv.textContent = `Швидкість вітру: ${windSpeed} м/с`;
 
     weatherInfoDiv.appendChild(temperatureDiv);
     weatherInfoDiv.appendChild(humidityDiv);
